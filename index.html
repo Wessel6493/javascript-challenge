@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bestelsysteem</title>
+</head>
+<body>
+<div class="container">
+    <div class="left-block">
+        <h2>Menu</h2>
+        <form id="order-form">
+            <div class="product-row">
+                <div class="product-name">Saucijzenbroodje:</div>
+                <div class="product-quantity">
+                    <button type="button" id="Saucijzenbroodje-minus">-</button>
+                    <span id="Saucijzenbroodje-quantity">0</span>
+                    <button type="button" id="Saucijzenbroodje-plus">+</button>
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product-name">Croissant:</div>
+                <div class="product-quantity">
+                    <button type="button" id="Croissant-minus">-</button>
+                    <span id="Croissant-quantity">0</span>
+                    <button type="button" id="Croissant-plus">+</button>
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product-name">Water:</div>
+                <div class="product-quantity">
+                    <button type="button" id="Water-minus">-</button>
+                    <span id="Water-quantity">0</span>
+                    <button type="button" id="Water-plus">+</button>
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product-name">Cola:</div>
+                <div class="product-quantity">
+                    <button type="button" id="Cola-minus">-</button>
+                    <span id="Cola-quantity">0</span>
+                    <button type="button" id="Cola-plus">+</button>
+                </div>
+            </div>
+            <button type="submit" id="order-button">Bestel</button>
+            <button type="button" id="reset-btn">Opnieuw</button>
+        </form>
+    </div>
+    <div class="right-block">
+        <h2>Besteloverzicht</h2>
+        <div id="order-summary"></div>
+    </div>
+</div>
+</body>
+<script src="javascript/js.js"></script>
+</html>
